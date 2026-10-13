@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PortSlop Privacy Policy</title><style>
+:root{--bg:#fbfbfd;--fg:#1d1d1f;--mut:#6e6e73;--card:#fff;--line:#e5e5ea;--pink:#ff2d70;--orange:#ff7a3d}
+@media(prefers-color-scheme:dark){:root{--bg:#0f0f12;--fg:#f5f5f7;--mut:#a1a1a6;--card:#1a1a1f;--line:#2c2c33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:64px 20px 80px}
+.glyph{width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,var(--pink),var(--orange));display:grid;place-items:center;box-shadow:0 12px 30px -10px var(--pink)}
+.glyph svg{width:36px;height:36px;fill:#fff}
+h1{font-size:44px;line-height:1.1;letter-spacing:-.02em;margin:28px 0 12px}
+h2{font-size:22px;margin:40px 0 8px}
+p,li{color:var(--mut)}
+strong{color:var(--fg)}
+.lede{font-size:21px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:28px 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:32px 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.step b{display:block;color:var(--fg);margin-bottom:4px}
+a{color:var(--pink);text-decoration:none}a:hover{text-decoration:underline}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--mut);display:flex;gap:18px;flex-wrap:wrap}
+</style></head>
+<body><main>
+<div class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v2H6zM4 6.5h16v2H4zM3 10h18a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm7 3v6l5-3z"/></svg></div>
+<h1>Privacy Policy</h1>
+<p>Effective October 13, 2026</p>
+
+<p>PortSlop is a desktop app for macOS that reposts a user's own TikTok videos to their own YouTube channel. It runs only on the user's computer. The developer operates no servers and receives no data from the app.</p>
+
+<h2>Google user data PortSlop accesses</h2>
+<ul>
+  <li><strong>youtube.upload</strong>: used only to upload videos to the signed-in user's YouTube channel, with titles and descriptions taken from that user's TikTok captions.</li>
+  <li><strong>youtube.readonly</strong>: used only to read the signed-in user's channel name and profile picture so the app can show which channel is connected.</li>
+</ul>
+
+<h2>How data is stored</h2>
+<ul>
+  <li>OAuth tokens and the user's Google API client secret are stored in the macOS Keychain on the user's own computer.</li>
+  <li>The list of ported videos, their status, and cover thumbnails are stored in the app's folder on the user's computer.</li>
+  <li>Downloaded videos are stored temporarily and deleted as soon as the upload finishes.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>PortSlop does not sell, share, or transfer user data to anyone. The app talks directly to Google (YouTube Data API) and TikTok only. Nothing is sent to the developer or any third party. There are no analytics, ads, or tracking.</p>
+
+<h2>Limited Use</h2>
+<p>PortSlop's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. PortSlop also complies with the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles data.</p>
+
+<h2>Removing access and deleting data</h2>
+<ul>
+  <li>Click <strong>Disconnect</strong> in PortSlop, which revokes its Google access and deletes the stored tokens, or revoke access any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li>Deleting the app and its folder at <strong>~/Library/Application Support/PortSlop</strong> removes all locally stored data.</li>
+</ul>
+
+<h2>Changes and contact</h2>
+<p>Updates to this policy will be posted on this page. Questions: contact the developer via <a href="https://github.com/ge0rgeperrin">GitHub</a>.</p>
+<footer><span>PortSlop</span><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="https://github.com/ge0rgeperrin">Contact</a></footer>
+</main></body></html>
